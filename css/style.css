@@ -1,0 +1,574 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 2.2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+h1 {
+  font-family: Gudea, Georgia, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: Gudea, Georgia, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h4 {
+  color: #4F4C4E;
+  font-family: Futura, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h5 {
+  color: #FFFFFF;
+  font-family: Futura, Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h6 {
+  color: #4F4C4E;
+  font-family: Futura, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.white-text {
+  color: #FFFFFF;
+  font-weight:normal;
+  text-align: center;
+}
+
+.indent {
+  padding-left: 10rem;
+}
+
+a {
+  color: black;
+}
+
+ul.research-3 {
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  text-align: left;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+ul {
+  list-style:none;
+}
+
+hr {
+  border-width: 1px;
+  color: #000000;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.teal-button {
+  background-color: #408281;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  font-family: Futura, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.teal-button a {
+  color: #FFFFFF;
+}
+
+.white-button {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  font-family: Futura, Arial, sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.white-button a {
+  color: #408281;
+}
+
+.grey-caps {
+  color: #777777;
+  font-size: 1.4rem;
+  font-family: Futura, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero {
+  height: 45rem;
+  position: relative;
+  width: 100;
+}
+
+.hero-text {
+  left: 50%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.featured-content {
+  text-align: center;
+  width: 100%;
+}
+
+.featured-text {
+  padding: 0 5rem 5rem 5rem;
+  text-align: center;
+}
+
+.featured-content img {
+  width: 60%;
+  padding: 5rem;
+}
+
+.icon {
+  display: block;
+  fill: #414040;
+  height: 40%;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.logo {
+  display: inline-block;
+  float: left;
+  margin: 3rem 2rem 2rem 2rem;
+  max-width: 10rem;
+  text-align: left;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.menu {
+  color: black;
+  font-family: Futura, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  float: right;
+  margin: 2rem 1rem 0 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  padding: .5rem;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:block;
+  height: 350px;
+  width: 100%;
+}
+
+.skills h4{
+  font-weight: normal;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #408281;
+  color: #FFFFFF;
+  padding: 5rem;
+  text-align: center;
+}
+
+.flex-footer {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+.footer-icon {
+  fill: white;
+  margin: 2rem;
+
+}
+
+/* Project Page */
+
+.keep-hero {
+  background-image: url("/images/keep-header.jpg");
+  background-size: cover;
+  height: 60rem;
+  position: relative;
+  width: 100%;
+}
+
+.project-header {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.project-header img {
+  width: 60%;
+}
+
+.project-header p {
+  padding: 0 5rem 0 5rem;
+  text-align: center;
+}
+
+.summary {
+  background-color: #FF05AA;
+  height: 28rem;
+  margin: 0;
+  padding: 5rem;
+}
+
+.roles {
+  background-color: #BBBBBB;
+  margin: 0;
+  padding: 5rem;
+  width: 100%;
+}
+
+.tools {
+  background-color: #408281;
+  margin: 0;
+  padding: 5rem;
+  width: 100%;
+}
+
+.problem {
+  background-color: #F7F6F6;
+  padding: 5rem;
+  text-align: center;
+}
+
+.solution {
+  padding: 5rem;
+  text-align: center;
+}
+
+.competitive-analysis {
+  background-color: #F7F6F6;
+  margin: 0;
+  padding: 5rem;
+  text-align: center;
+}
+
+.competitive-analysis p {
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  padding: 5rem;
+  text-align: center;
+}
+
+.research-1 {
+  font-family: Gudea, Georgia, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 3rem 0 3rem 0;
+}
+
+.research-2 {
+  margin: 0 20% 0% 20%;
+  padding: 3rem 0 3rem 0;
+  text-align: center;
+}
+
+.research-3 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.research-3 ul {
+  margin-bottom: 5rem;
+  text-align: left;
+}
+
+.personas h3 {
+  margin: 0;
+}
+
+.personas p {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.personas ul {
+  font-size: 1.6rem;
+  list-style-type: disc;
+}
+
+.personas img {
+  margin-right: 1rem;
+}
+
+
+.persona-1 {
+  background-image: url("/images/persona-1-bg.png");
+  background-size: cover;
+  padding: 5rem;
+}
+
+.persona-2 {
+  background-image: url("/images/persona-2-bg.png");
+  background-size: cover;
+  padding: 5rem;
+}
+
+.persona-3 {
+  background-image: url("/images/persona-3-bg.png");
+  background-size: cover;
+  padding: 5rem;
+}
+
+.indent {
+  margin-left: 10rem;
+}
+
+.user-stories-1 {
+  background-color: #408281;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 5rem;
+  text-align: center;
+}
+
+.user-stories-2 {
+  background-color: #ACD7D6;
+  margin: 0;
+  padding: 5rem 5rem 2.5rem 5rem;
+}
+
+.user-stories-3 {
+  background-color: #ACD7D6;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 2.5rem 5rem 5rem 5rem;
+  text-align: center;
+}
+
+.user-stories-3 table {
+  text-align: left;
+  border: 1px solid #BBBBBB;
+}
+
+.grey-cell {
+  background-color: #BBBBBB;
+}
+
+.white-cell {
+  background-color: #FFFFFF;
+}
+
+.user-flows img {
+  margin: 3rem;
+}
+
+.wireframes-1 {
+  background-color: #FF05AA;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.wireframes-2 {
+  background-color: #CCB4B7;
+  margin: 0;
+  padding: 5rem 5rem 2.5rem 5rem;
+  width: 100%;
+}
+
+.wireframes-3 {
+  background-color: #CCB4B7;
+  margin: 0;
+  padding: 2.5rem 5rem 5rem 5rem;
+  width: 100%;
+}
+
+.usability-testing ol {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.branding {
+  background-color: #F7F6F6;
+  text-align: center;
+}
+
+.typography-1 {
+  background-color: #408281;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.typography-2 {
+  background-color: #ACD7D6;
+  font-family: Patua One, Georgia, sans-serif;
+  margin: 0;
+  padding: 5rem 5rem 2.5rem 5rem;
+  width: 100%;
+}
+
+.typography-3 {
+  background-color: #ACD7D6;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 2.5rem 5rem 5rem 5rem;
+  width: 100%;
+}
+
+.colors {
+  text-align: center;
+  display:inline-block;
+}
+
+div.circle {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%
+}
+
+#blue {
+  background: #1B79DD;
+}
+
+#grey {
+  background: #414040;
+}
+
+#white {
+  background: #FFFFFF;
+  border: 1px solid #000000;
+}
+
+#lt-blue {
+  background: #96CDF5;
+}
+
+#yellow {
+  background: #FFDF51;
+}
+
+#lt-grey {
+  background: #D9D9D9;
+}
+
+.colors li {
+  display: inline-block;
+  padding: 0 2rem 0 2rem;
+}
+
+.colors ul {
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.style-guide {
+  background-color: #FF05AA;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.style-guide-2 {
+  text-align: center;
+  padding: 5rem 0 5rem 0;
+}
+
+.hifi-prototype {
+  background-color: #F7F6F6;
+  padding: 5rem;
+  text-align: center;
+}
+
+.pref-test {
+  text-align: center;
+}
+
+.usability-testing-4 {
+  background-color: #F7F6F6;
+  text-align: center;
+  padding-bottom: 5rem;
+}
