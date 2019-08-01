@@ -164,6 +164,9 @@ hr {
 }
 
 .featured-content {
+  background-image: url("/images/keep-header.jpg");
+  background-size: cover;
+  height: 60rem;
   text-align: center;
   width: 100%;
 }
@@ -174,7 +177,7 @@ hr {
 }
 
 .featured-content img {
-  width: 60%;
+  width: 50%;
   padding: 5rem;
 }
 
@@ -231,12 +234,16 @@ hr {
 }
 
 .footer {
-  grid-area: footer;
   background-color: #408281;
   color: #FFFFFF;
   padding: 5rem;
   text-align: center;
 }
+
+.footer p {
+  text-align: center;
+}
+
 
 .flex-footer {
   align-content: center;
@@ -250,7 +257,6 @@ hr {
 .footer-icon {
   fill: white;
   margin: 2rem;
-
 }
 
 /* Project Page */
@@ -304,6 +310,11 @@ hr {
   margin: 0;
   padding: 5rem;
   width: 100%;
+}
+
+.project-parallax {
+  background-image: url(/images/case-study-parallax.jpg);
+  height: 35rem;
 }
 
 .problem {
@@ -480,18 +491,22 @@ hr {
 
 .typography-2 {
   background-color: #ACD7D6;
-  font-family: Patua One, Georgia, sans-serif;
   margin: 0;
   padding: 5rem 5rem 2.5rem 5rem;
   width: 100%;
 }
 
-.typography-3 {
-  background-color: #ACD7D6;
+.patua {
+  font-family: Patua One, Georgia, sans-serif;
+  font-size: 2rem;
+  font-weight:bold;
+}
+
+.roboto {
   font-family: Roboto, Arial, sans-serif;
-  margin: 0;
-  padding: 2.5rem 5rem 5rem 5rem;
-  width: 100%;
+  font-size: 2rem;
+  font-weight:bold;
+  padding-top: 2.5rem;
 }
 
 .colors {
@@ -571,4 +586,101 @@ div.circle {
   background-color: #F7F6F6;
   text-align: center;
   padding-bottom: 5rem;
+}
+
+/* Tablets: */
+@media screen and (min-width: 768px) {
+  .menu {
+    color: black;
+    font-family: Futura, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    float: right;
+    margin: 2rem 5rem 0 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .menu li {
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  .keep-hero {
+    background-image: url("/images/keep-header.jpg");
+    background-size: cover;
+    height: 50rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .hero-text {
+    width: 40%;
+  }
+
+  .featured-content img {
+    float: left;
+    padding: 2rem;
+    width: 90%;
+  }
+
+  .featured-content {
+    align-content: center;
+    align-items: center;
+    background-image: url("/images/keep-header.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .featured-text {
+    text-align: center;
+  }
+
+  .skills {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+  }
+
+  .project-header {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-header img {
+    max-height: 30rem;
+    padding-left: 0;
+  }
+
+  .project-text {
+    width: 60%;
+    padding: 2rem;
+    text-align: left;
+  }
+
+  .project-text p {
+    padding: 0;
+    text-align: left;
+  }
+
+}
+
+/* Desktops: */
+@media screen and (min-width: 991px) {
+
 }
