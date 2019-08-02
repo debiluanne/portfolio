@@ -17,6 +17,7 @@ h1 {
   font-family: Gudea, Georgia, sans-serif;
   font-size: 4rem;
   font-weight: bold;
+  line-height: 5rem;
 }
 
 h2 {
@@ -66,7 +67,12 @@ h6 {
 }
 
 .indent {
-  padding-left: 10rem;
+  margin-left: 10rem;
+}
+
+.indent li {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
 }
 
 a {
@@ -144,22 +150,20 @@ hr {
   font-size: 1.4rem;
   font-family: Futura, Arial, sans-serif;
   font-weight: bold;
+  margin: 0;
   text-transform: uppercase;
 }
 
 .hero {
   height: 45rem;
-  position: relative;
+  /* position: relative; */
   width: 100;
 }
 
 .hero-text {
-  left: 50%;
   margin: 0 auto;
-  padding-top: 5rem;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 10rem;
+  text-align: center;
   width: 60%;
 }
 
@@ -244,7 +248,6 @@ hr {
   text-align: center;
 }
 
-
 .flex-footer {
   align-content: center;
   align-items: center;
@@ -264,7 +267,7 @@ hr {
 .keep-hero {
   background-image: url("/images/keep-header.jpg");
   background-size: cover;
-  height: 60rem;
+  height: 62rem;
   position: relative;
   width: 100%;
 }
@@ -277,7 +280,7 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0;
-  padding: 3rem;
+  padding: 2rem;
   text-align: center;
   width: 100%;
 }
@@ -293,7 +296,6 @@ hr {
 
 .summary {
   background-color: #FF05AA;
-  height: 28rem;
   margin: 0;
   padding: 5rem;
 }
@@ -328,6 +330,10 @@ hr {
   text-align: center;
 }
 
+.solution-img img {
+  width: 100%;
+}
+
 .competitive-analysis {
   background-color: #F7F6F6;
   margin: 0;
@@ -351,6 +357,10 @@ hr {
   padding: 3rem 0 3rem 0;
 }
 
+.research-1 img {
+  width: 90%;
+}
+
 .research-2 {
   margin: 0 20% 0% 20%;
   padding: 3rem 0 3rem 0;
@@ -371,20 +381,10 @@ hr {
   margin: 0;
 }
 
-.personas p {
-  font-size: 1.6rem;
-  margin-top: 2rem;
-}
-
 .personas ul {
   font-size: 1.6rem;
   list-style-type: disc;
 }
-
-.personas img {
-  margin-right: 1rem;
-}
-
 
 .persona-1 {
   background-image: url("/images/persona-1-bg.png");
@@ -404,8 +404,9 @@ hr {
   padding: 5rem;
 }
 
-.indent {
-  margin-left: 10rem;
+.persona-1 img, .persona-2 img, .persona-3 img {
+  margin-right: 1rem;
+  width: 35%;
 }
 
 .user-stories-1 {
@@ -431,8 +432,19 @@ hr {
 }
 
 .user-stories-3 table {
+  align: center;
+  border: 2px solid #BBBBBB;
   text-align: left;
-  border: 1px solid #BBBBBB;
+}
+
+.user-stories-3 td {
+  padding: .5rem;
+}
+
+.table {
+  height: 200px;
+  overflow: auto;
+  text-align: center;
 }
 
 .grey-cell {
@@ -441,6 +453,10 @@ hr {
 
 .white-cell {
   background-color: #FFFFFF;
+}
+
+.user-flows {
+  text-align: center;
 }
 
 .user-flows img {
@@ -475,9 +491,17 @@ hr {
   text-align: left;
 }
 
+.usability-testing p {
+  font-weight: bold;
+}
+
 .branding {
   background-color: #F7F6F6;
   text-align: center;
+}
+
+.branding img {
+  width: 80%;
 }
 
 .typography-1 {
@@ -582,6 +606,10 @@ div.circle {
   text-align: center;
 }
 
+.pref-test img {
+  width: 80%;
+}
+
 .usability-testing-4 {
   background-color: #F7F6F6;
   text-align: center;
@@ -677,6 +705,104 @@ div.circle {
     padding: 0;
     text-align: left;
   }
+
+  .solution {
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
+    width: 70%;
+  }
+
+  .solution-img {
+    margin: 0;
+    height: 100%;
+  }
+
+ .solution img {
+   margin: 0;
+ }
+
+ .flex-container {
+   align-content: stretch;
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+ }
+
+ .research-1 img {
+   width: 70%;
+ }
+
+ .research-2 {
+   padding-top: 0;
+ }
+
+ .research-3 {
+   display: flex;
+   align-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+
+ .features {
+   width: 50%;
+ }
+
+ .frustrations {
+   width: 50%;
+ }
+
+ .center {
+   text-align: center;
+ }
+
+ .user-stories-3 table {
+   align: center;
+   border: 2px solid #BBBBBB;
+   margin-left:15%;
+   margin-right:15%;
+   text-align: left;
+   width:70%;
+ }
+
+ .branding {
+   background-color: #F7F6F6;
+   text-align: center;
+ }
+
+ .branding img {
+   width: 30%;
+ }
+
+ .usability-testing p {
+   font-weight: bold;
+   text-align: center;
+ }
+
+ .usability-testing ol {
+   text-align: center;
+ }
+
+ .persona-1 img, .persona-2 img, .persona-3 img {
+   margin-right: 3rem;
+   width: 50%;
+ }
+
+ .personas ul {
+   margin-left: 41rem;
+ }
+
+ .indent li {
+   font-size: 1.6rem;
+   line-height: 2.4rem;
+ }
+
+ .pref-test img {
+   width: 70%;
+ }
 
 }
 
