@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-family: Gudea, Georgia, sans-serif;
+  font-family: Gudea, Monserrat, Georgia, sans-serif;
   font-size: 4rem;
   font-weight: bold;
   line-height: 5rem;
@@ -117,10 +117,14 @@ hr {
   font-family: Futura, Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: normal;
-  margin-top: 3rem;
+  margin: 3rem;
   padding: 1.5rem;
   text-align: center;
   text-decoration: none;
+}
+
+.center-btn {
+  text-align: center;
 }
 
 .teal-button a {
@@ -155,8 +159,7 @@ hr {
 }
 
 .hero {
-  height: 45rem;
-  /* position: relative; */
+
   width: 100;
 }
 
@@ -196,8 +199,8 @@ hr {
 .logo {
   display: inline-block;
   float: left;
-  margin: 3rem 2rem 2rem 2rem;
-  max-width: 10rem;
+  margin: 3rem 0 2rem 2rem;
+  max-width: 9rem;
   text-align: left;
 }
 
@@ -229,7 +232,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   display:block;
-  height: 350px;
+  height: 50vh;
   width: 100%;
 }
 
@@ -267,7 +270,7 @@ hr {
 .keep-hero {
   background-image: url("/images/keep-header.jpg");
   background-size: cover;
-  height: 62rem;
+  height: 75vh;
   position: relative;
   width: 100%;
 }
@@ -286,12 +289,20 @@ hr {
 }
 
 .project-header img {
-  width: 60%;
+  width: 80%;
 }
 
 .project-header p {
   padding: 0 5rem 0 5rem;
   text-align: center;
+}
+
+.project-text {
+  padding-top: 0;
+}
+
+.project-text h1 {
+  margin-top: 0;
 }
 
 .summary {
@@ -337,7 +348,6 @@ hr {
 .competitive-analysis {
   background-color: #F7F6F6;
   margin: 0;
-  padding: 5rem;
   text-align: center;
 }
 
@@ -580,6 +590,7 @@ div.circle {
 
 .center {
   text-align: center;
+  margin: 0 auto;
 }
 
 .style-guide {
@@ -616,6 +627,12 @@ div.circle {
   padding-bottom: 5rem;
 }
 
+.flex-box {
+  flex-grow: 1;
+  padding: 2.55rem 5rem 2.5rem 5rem;
+  margin: auto;
+}
+
 /* Tablets: */
 @media screen and (min-width: 768px) {
   .menu {
@@ -632,6 +649,14 @@ div.circle {
   .menu li {
     display: inline-block;
     padding: 1rem;
+  }
+
+  .logo {
+    display: inline-block;
+    float: left;
+    margin: 3rem 2rem 2rem 2rem;
+    max-width: 10rem;
+    text-align: left;
   }
 
   .keep-hero {
@@ -692,7 +717,7 @@ div.circle {
 
   .project-header img {
     max-height: 30rem;
-    padding-left: 0;
+    padding: 3rem 0 3rem 0;
   }
 
   .project-text {
@@ -707,15 +732,16 @@ div.circle {
   }
 
   .solution {
-    padding: 2rem;
+    padding: 5rem;
     text-align: center;
-    margin: 0;
-    width: 70%;
+    margin: 0 auto;
+    width: 60%;
   }
 
   .solution-img {
-    margin: 0;
     height: 100%;
+    margin: 0;
+    width: 30%;
   }
 
  .solution img {
@@ -728,6 +754,7 @@ div.circle {
    display: flex;
    flex-direction: row;
    flex-wrap: nowrap;
+   margin: 0;
  }
 
  .research-1 img {
@@ -804,9 +831,93 @@ div.circle {
    width: 70%;
  }
 
+ .center-btn {
+   text-align: center;
+ }
+
 }
 
 /* Desktops: */
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 900px) {
+
+  .logo {
+    display: inline-block;
+    float: left;
+    margin: 3rem 2rem 2rem 5rem;
+    max-width: 10rem;
+    text-align: left;
+  }
+
+  .project-header {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-header img {
+    padding: 3rem;
+    width: 100%;
+  }
+
+  .project-text {
+    width: 50%;
+    padding-left: 2rem;
+    text-align: left;
+  }
+
+  .project-text p {
+    padding: 0;
+    text-align: left;
+  }
+
+  .summary {
+    background-color: #FF05AA;
+    margin: 0;
+    padding: 5rem;
+    width: 100%;
+  }
+
+  .roles {
+    background-color: #BBBBBB;
+    margin: 0;
+    padding: 5rem;
+    width: 100%;
+  }
+
+  .tools {
+    background-color: #408281;
+    margin: 0;
+    padding: 5rem;
+    width: 100%;
+  }
+
+  .flex-container {
+    align-content: stretch;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0 2.5rem 0 2.5rem;
+  }
+
+  .flex-box {
+    flex-grow: 1;
+    padding: 0 2.5rem 2.5rem 2.5rem;
+    margin: auto;
+    width: 30%;
+  }
+
+  .bottom-space {
+
+  }
+
+
+
 
 }
