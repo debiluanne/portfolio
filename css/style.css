@@ -15,14 +15,14 @@ body {
 
 h1 {
   font-family: Gudea, Monserrat, Georgia, sans-serif;
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-weight: bold;
   line-height: 5rem;
 }
 
 h2 {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: normal;
 }
 
@@ -159,8 +159,7 @@ hr {
 }
 
 .hero {
-
-  width: 100;
+  width: 100%;
 }
 
 .hero-text {
@@ -199,8 +198,8 @@ hr {
 .logo {
   display: inline-block;
   float: left;
-  margin: 3rem 0 2rem 2rem;
-  max-width: 9rem;
+  margin: 3rem 0 2rem 1rem;
+  max-width: 7rem;
   text-align: left;
 }
 
@@ -232,7 +231,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   display:block;
-  height: 50vh;
+  height: 60vh;
   width: 100%;
 }
 
@@ -270,7 +269,7 @@ hr {
 .keep-hero {
   background-image: url("/images/keep-header.jpg");
   background-size: cover;
-  height: 75vh;
+  padding-bottom: 2rem;
   position: relative;
   width: 100%;
 }
@@ -289,7 +288,7 @@ hr {
 }
 
 .project-header img {
-  width: 80%;
+  width: 60%;
 }
 
 .project-header p {
@@ -345,9 +344,14 @@ hr {
   width: 100%;
 }
 
+.section {
+  padding: 5rem;
+}
+
 .competitive-analysis {
   background-color: #F7F6F6;
   margin: 0;
+  padding: 5rem;
   text-align: center;
 }
 
@@ -364,15 +368,14 @@ hr {
   font-family: Gudea, Georgia, sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
-  padding: 3rem 0 3rem 0;
+  padding-top: 3rem;
 }
 
 .research-1 img {
-  width: 90%;
+  width: 100%;
 }
 
 .research-2 {
-  margin: 0 20% 0% 20%;
   padding: 3rem 0 3rem 0;
   text-align: center;
 }
@@ -383,7 +386,8 @@ hr {
 }
 
 .research-3 ul {
-  margin-bottom: 5rem;
+  margin: 0 0 5rem 0;
+  padding: 0;
   text-align: left;
 }
 
@@ -627,14 +631,24 @@ div.circle {
   padding-bottom: 5rem;
 }
 
-.flex-box {
-  flex-grow: 1;
-  padding: 2.55rem 5rem 2.5rem 5rem;
-  margin: auto;
-}
+
 
 /* Tablets: */
 @media screen and (min-width: 768px) {
+
+  h1 {
+    font-family: Gudea, Monserrat, Georgia, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 5rem;
+  }
+
+  h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+
   .menu {
     color: black;
     font-family: Futura, Arial, sans-serif;
@@ -659,10 +673,21 @@ div.circle {
     text-align: left;
   }
 
+  .parallax {
+    background-attachment: fixed;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:block;
+    height: 30vh;
+    width: 100%;
+  }
+
   .keep-hero {
     background-image: url("/images/keep-header.jpg");
     background-size: cover;
-    height: 50rem;
+    height: 35vh;
     position: relative;
     width: 100%;
   }
@@ -757,6 +782,12 @@ div.circle {
    margin: 0;
  }
 
+ .flex-box {
+   flex-grow: 1;
+   padding: 2.5rem 5rem 2.5rem 5rem;
+   margin: auto;
+ }
+
  .research-1 img {
    width: 70%;
  }
@@ -848,6 +879,14 @@ div.circle {
     text-align: left;
   }
 
+  .keep-hero {
+    background-image: url("/images/keep-header.jpg");
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    width: 100%;
+  }
+
   .project-header {
     align-content: center;
     align-items: center;
@@ -903,7 +942,7 @@ div.circle {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    padding: 0 2.5rem 0 2.5rem;
+    padding: 0;
   }
 
   .flex-box {
