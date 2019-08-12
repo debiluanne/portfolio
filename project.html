@@ -27,17 +27,19 @@
             <div class="project-text">
               <h1>Keep.</h1>
               <p>Keep is a product designed to simplify cloud storage and file organization.</p>
+              <div class="center-btn">
+                <div class="teal-button center">
+                  <a href="https://www.figma.com/proto/MLLLauLwpBAqpQTPXp444awa/Keep-Hifi-Mockups-Mobile?scaling=scale-down&node-id=1%3A6">View Prototype</a>
+                </div>
+              </div>
             </div>
+
           </div>
-          <div class="center-btn">
-            <div class="teal-button center">
-              <a href="https://www.figma.com/proto/MLLLauLwpBAqpQTPXp444awa/Keep-Hifi-Mockups-Mobile?scaling=scale-down&node-id=1%3A6">View Prototype</a>
-            </div>
-          </div>
+
       </header>
 
     <!-- Summary, Roles and Tools -->
-      <section class="flex-container">
+      <section class="flex-wrap">
         <div class="summary">
           <h5>SUMMARY</h5>
           <p class="white-text">With so many cloud storage and file backup options available, it can be overwhelming to choose one. Keep is a cloud storage service that is here to simplify the process for you.
@@ -70,7 +72,6 @@
     <!-- Solution -->
     <section class="flex-container">
       <div class="solution-img">
-        <img src="images/keep-logo-background.png" alt="keep logo">
       </div>
       <div class="solution">
         <h3>The Solution</h3>
@@ -81,22 +82,24 @@
 
     <!-- Competitive Analysis -->
     <section class="competitive-analysis">
+      <div class="section-title">
         <h3>Competitive analysis</h3>
           <p>I created a SWOT analysis and researched brands that each have different specialities when it comes to cloud storage. Depending on which direction we went in, one of these brands would be a main competitor.
           </p>
+      </div>
       <div class="flex-container">
         <div class="flex-box">
-          <img src="images/google-drive.png" alt="Google Drive" height="70rem;">
+          <img src="images/google-drive.png" alt="Google Drive" class="competitor">
           <p>Google Drive not only provides file organization but allows users to create documents, spreadsheets and presentations while collaborating and sharing easily with others. It has a lot of competition with companies like Dropbox and also Microsoft Office.
           </p>
         </div>
         <div class="flex-box">
-          <img src="images/evernote.png" alt="Evernote" height="70rem;">
+          <img src="images/evernote.png" alt="Evernote" class="competitor">
           <p>Evernote targets the specific need for organizing notes, lists, voice memos which other similar programs don’t focus on but this also limits its capabilities to a specific niche.
           </p>
         </div>
         <div class="flex-box">
-          <img src="images/pinterest-1.png" alt="Pinterest" height="70rem;">
+          <img src="images/pinterest-1.png" alt="Pinterest" class="competitor">
           <p>Pinterest allows users to create different boards for organizing their content visually, while also acting as a bookmarking tool for saving links. Other social media apps are adding comparable features, which reduces the need for an additional bookmarking site.
           </p>
         </div>
@@ -107,38 +110,39 @@
     </section>
 
       <!-- User Research -->
-      <section class="section">
+      <section class="section-title">
         <h3>User Research</h3>
           <p>I conducted a survey to gauge how people are currently using cloud storage services and to find out what features are most important to them. The survey revealed what people are most frustrated with and where improvements can be made.
           </p>
-        <div class="flex-container">
-        <div class="research-1 flex-box">
-          How often people use cloud storage services
-          <img src="images/graph.png" alt="Pie Chart">
-        </div>
-        <div class="research-2">
-          <h1>95%</h1>
-            <p>of survey respondents use cloud storage for personal use, 50% also us it for business and 45% use it for school.
-            </p>
-        </div>
-        <div class="research-3">
-          <div class="features">
-            <h3>Top 3 Desired Features</h3>
-            <ul>
-              <li>File backup</li>
-              <li>Organizing content into folders or categories</li>
-              <li>Uploading files</li>
-            </ul>
+        <div class="flex-wrap">
+          <div class="research-1 flex-box">
+            How often people use cloud storage services
+            <img src="images/graph.png" alt="Pie Chart">
           </div>
-          <div class="frustrations">
-            <h3>Users’ biggest frustrations</h3>
-            <ul>
-              <li>Privacy/security</li>
-              <li>Accessing files across devices</li>
-              <li>Accidentally deleting files</li>
-            </ul>
+          <div class="research-2 flex-box">
+            <h1>95%</h1>
+              <p>of survey respondents use cloud storage for personal use, 50% also us it for business and 45% use it for school.
+              </p>
           </div>
-      </div>
+          <div class="research-3 flex-box">
+            <div class="features">
+              <h3>Top 3 Desired Features</h3>
+              <ul>
+                <li>File backup</li>
+                <li>Organizing content into folders or categories</li>
+                <li>Uploading files</li>
+              </ul>
+            </div>
+            <div class="frustrations">
+              <h3>Users’ biggest frustrations</h3>
+              <ul>
+                <li>Privacy/security</li>
+                <li>Accessing files across devices</li>
+                <li>Accidentally deleting files</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       <div class="center">
         <div class="teal-button">
         <a href="https://drive.google.com/open?id=1KzwJ7fp-RYeF4qzVow5SC16vM1Yxyg4r0UkC3nCtf1g">View User Survey</a>
@@ -154,112 +158,114 @@
         <p>I conducted a survey to gauge how people are currently using cloud storage services and to find out what features are most important to them. The survey revealed what people are most frustrated with and where improvements can be made.
         </p>
       </div>
-      <div class="persona-1">
-        <img src="images/persona-1.png" align="left">
-        <h3>Alex</h3>
-          <p class="grey-caps">Photography Student</p>
-            <ul class="indent">
-              <li>19 years old</li>
-              <li>College student</li>
-              <li>Savannah, GA</li>
-            </ul>
-          <p class="grey-caps">GOALS</p>
-            <ul>
-              <li>Staying organized with all the projects he’s working on</li>
-              <li>Having a place to store all his photo & music files</li>
-              <li>Building a photography portfolio</li>
-            </ul>
-          <p class="grey-caps">FRUSTRATIONS</p>
-            <ul>
-              <li>He keeps running out of hard drive space</li>
-              <li>It’s hard to keep track of all his files and projects</li>
-              <li>He has accidentally lost whole projects before</li>
-            </ul>
-      </div>
-      <div class="persona-2">
-        <img src="images/persona-2.png" width="35%" align="left">
-        <h3>Courtney</h3>
-          <p class="grey-caps">freelance illustrator</p>
-            <ul class="indent">
-              <li>34 years old</li>
-              <li>Illustrator/Graphic Artist</li>
-              <li>San Francisco, CA</li>
-            </ul>
-          <p class="grey-caps">GOALS</p>
-            <ul>
-              <li>Backing up all her work</li>
-              <li>Keeping all her client files organized</li>
-              <li>Easily sharing files with clients</li>
-            </ul>
-          <p class="grey-caps">FRUSTRATIONS</p>
-            <ul>
-              <li>Needs to be able to access her files across multiple
-              devices when she’s on the go</li>
-              <li>Needs a reliable service for her business</li>
-            </ul>
-      </div>
-      <div class="persona-3">
-        <img src="images/persona-3.png" width="35%" align="left">
-        <h3>Kristy</h3>
-          <p class="grey-caps">business owner</p>
-            <ul class="indent">
-              <li>45 years old</li>
-              <li>Owns a PR agency</li>
-              <li>New York, NY</li>
-            </ul>
-          <p class="grey-caps">GOALS</p>
-            <ul>
-              <li>Keeping all business files private and confidential</li>
-              <li>Making sure all employees can access files</li>
-              <li>Being able to access files when traveling</li>
-            </ul>
-          <p class="grey-caps">FRUSTRATIONS</p>
-            <ul>
-              <li>She’s not sure how secure her company’s files are</li>
-              <li>She needs a user friendly program to teach her
-              employees</li>
-            </ul>
+      <div class="persona-flex">
+        <div class="persona-1">
+          <img src="images/persona-1.png" align="left">
+          <h3>Alex</h3>
+            <p class="grey-caps">Photography Student</p>
+              <ul class="indent">
+                <li>19 years old</li>
+                <li>College student</li>
+                <li>Savannah, GA</li>
+              </ul>
+            <p class="grey-caps">GOALS</p>
+              <ul>
+                <li>Staying organized with all the projects he’s working on</li>
+                <li>Having a place to store all his photo & music files</li>
+                <li>Building a photography portfolio</li>
+              </ul>
+            <p class="grey-caps">FRUSTRATIONS</p>
+              <ul>
+                <li>He keeps running out of hard drive space</li>
+                <li>It’s hard to keep track of all his files and projects</li>
+                <li>He has accidentally lost whole projects before</li>
+              </ul>
+        </div>
+        <div class="persona-2">
+          <img src="images/persona-2.png" width="35%" align="left">
+          <h3>Courtney</h3>
+            <p class="grey-caps">freelance illustrator</p>
+              <ul class="indent">
+                <li>34 years old</li>
+                <li>Illustrator/Graphic Artist</li>
+                <li>San Francisco, CA</li>
+              </ul>
+            <p class="grey-caps">GOALS</p>
+              <ul>
+                <li>Backing up all her work</li>
+                <li>Keeping all her client files organized</li>
+                <li>Easily sharing files with clients</li>
+              </ul>
+            <p class="grey-caps">FRUSTRATIONS</p>
+              <ul>
+                <li>Needs to be able to access her files across multiple
+                devices when she’s on the go</li>
+                <li>Needs a reliable service for her business</li>
+              </ul>
+        </div>
+        <div class="persona-3">
+          <img src="images/persona-3.png" width="35%" align="left">
+          <h3>Kristy</h3>
+            <p class="grey-caps">business owner</p>
+              <ul class="indent">
+                <li>45 years old</li>
+                <li>Owns a PR agency</li>
+                <li>New York, NY</li>
+              </ul>
+            <p class="grey-caps">GOALS</p>
+              <ul>
+                <li>Keeping all business files private and confidential</li>
+                <li>Making sure all employees can access files</li>
+                <li>Being able to access files when traveling</li>
+              </ul>
+            <p class="grey-caps">FRUSTRATIONS</p>
+              <ul>
+                <li>She’s not sure how secure her company’s files are</li>
+                <li>She needs a user friendly program to teach her
+                employees</li>
+              </ul>
+          </div>
         </div>
       </section>
 
       <!-- User Stories -->
-      <section>
-      <div class="user-stories-1">
-          <h3>User<br>Stories</h3>
-      </div>
-      <div class="user-stories-2">
-        <p>Based on my user research and personas, I created user stories to determine the features that were most important for the minimum viable product. I ranked them in terms of high, medium or low priority to guide me in what features to include in my user flows and eventually my prototypes.
-        </p>
-      </div>
-      <div class="user-stories-3">
-        <div class="table">
-          <table style="height: 300px;">
-            <tr>
-              <td class="grey-cell">As a new user, I want to create an account.</td>
-            </tr>
-            <tr>
-              <td class="white-cell">As a returning user, I want to sign in to my account.</td>
-            </tr>
-            <tr>
-              <td class="grey-cell">As a returning user, I want to upload a file.</td>
-            </tr>
-            <tr>
-              <td class="white-cell">As a returning user, I want to organize a file into a folder.</td>
-            </tr>
-            <tr>
-              <td class="grey-cell">As a returning user, I want to view a document.</td>
-            </tr>
-            <tr>
-              <td class="white-cell">As a returning user, I want to upgrade my account.</td>
-            </tr>
-          </table>
+      <section class="flex-container">
+        <div class="user-stories-1">
+            <h3>User<br>Stories</h3>
         </div>
-          <div style="margin-top: 5rem;"
-            <div class="white-button">
-              <a href="https://drive.google.com/open?id=1t35sdJgBf_DSkoc4I2LsuREGSAMrHqqPnMNZpQbi_tA">View User Stories</a>
+        <div class="user-stories-2">
+          <p>Based on my user research and personas, I created user stories to determine the features that were most important for the minimum viable product. I ranked them in terms of high, medium or low priority to guide me in what features to include in my user flows and eventually my prototypes.
+          </p>
+        </div>
+        <div class="user-stories-3">
+          <div class="table">
+            <table>
+              <tr>
+                <td class="grey-cell">As a new user, I want to create an account.</td>
+              </tr>
+              <tr>
+                <td class="white-cell">As a returning user, I want to sign in to my account.</td>
+              </tr>
+              <tr>
+                <td class="grey-cell">As a returning user, I want to upload a file.</td>
+              </tr>
+              <tr>
+                <td class="white-cell">As a returning user, I want to organize a file into a folder.</td>
+              </tr>
+              <tr>
+                <td class="grey-cell">As a returning user, I want to view a document.</td>
+              </tr>
+              <tr>
+                <td class="white-cell">As a returning user, I want to upgrade my account.</td>
+              </tr>
+            </table>
+          </div>
+            <div style="margin-top: 5rem;">
+              <div class="white-button">
+                <a href="https://drive.google.com/open?id=1t35sdJgBf_DSkoc4I2LsuREGSAMrHqqPnMNZpQbi_tA">View User Stories</a>
+              </div>
             </div>
           </div>
-        </div>
       </section>
 
       <!-- User Flows -->
@@ -269,13 +275,15 @@
             <p>The next step was to create user flows for these tasks which included creating an account, signing in, uploading a file, organizing a file and upgrading an account. I started with sketching multiple flows for each task before finalizing them with digital versions. This process helped me work out the simplest way for users to complete a task.
             </p>
         </div>
-        <img src="images/user-flow-create-account-sign-in.png" alt="User Flow Create Account or Sign In" width="80%">
-        <img src="images/user-flow-upload-organize.png" alt="User Flow Upload a File" width="80%">
-        <img src="images/user-flow-upgrade.png" alt="User Flow Upgrade Account" width="80%">
+        <div class="user-flow-flex">
+          <img src="images/user-flow-create-account-sign-in.png" alt="User Flow Create Account or Sign In">
+          <img src="images/user-flow-upload-organize.png" alt="User Flow Upload a File">
+          <img src="images/user-flow-upgrade.png" alt="User Flow Upgrade Account">
+        </div>
       </section>
 
       <!-- Wireframes -->
-      <section>
+      <section class="wireframes">
         <div class="wireframes-1">
           <h3>Wireframes</h3>
             <p>Once the user flows were determined, I sketched out multiple iterations for the website, before designing the final wireframes in Figma. From there, I create a lo-fi prototype of the desktop site.
@@ -290,10 +298,12 @@
       </section>
 
       <!-- Usability Testing -->
-      <section class="section-title">
-        <h3>Usability Testing</h3>
-          <p>The lo-fi prototype was then used to conduct usability testing in-person and over video call. Users were asked to complete the tasks outlined in my user flows. Through these tests, I discovered some minor changes I needed to make for better usability such as making the file name clickable for viewing the file and making folder names highlight so the user can see when it is selected.
-          </p>
+      <section class="user-testing">
+        <div class="section-title">
+          <h3>Usability Testing</h3>
+            <p>The lo-fi prototype was then used to conduct usability testing in-person and over video call. Users were asked to complete the tasks outlined in my user flows. Through these tests, I discovered some minor changes I needed to make for better usability such as making the file name clickable for viewing the file and making folder names highlight so the user can see when it is selected.
+            </p>
+        </div>
         <div class="usability-testing">
           <p>Tasks:</p>
             <ol>
@@ -304,7 +314,9 @@
               <li>Move a file into the new folder.</li>
             </ol>
         </div>
+        <div class="flex-box">
           <img src="images/wireframe-usability-testing.png" alt="Wireframe Usability Testing" width="100%">
+        </div>
       </section>
 
       <!-- Branding -->
