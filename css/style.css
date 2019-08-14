@@ -27,14 +27,14 @@ h2 {
 }
 
 h3 {
-  font-family: Gudea, Georgia, sans-serif;
+  font-family: Gudea, Monserrat, Georgia, sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }
 
 h4 {
   color: #4F4C4E;
-  font-family: Futura, Arial, sans-serif;
+  font-family: futura-pt, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -42,7 +42,7 @@ h4 {
 
 h5 {
   color: #FFFFFF;
-  font-family: Futura, Arial, sans-serif;
+  font-family: futura-pt, sans-serif;
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ h5 {
 
 h6 {
   color: #4F4C4E;
-  font-family: Futura, Arial, sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   margin: 2rem;
@@ -114,7 +114,7 @@ hr {
   border: none;
   border-radius: 10px;
   display: inline-block;
-  font-family: Futura, Arial, sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 1.6rem;
   font-weight: normal;
   margin: 3rem;
@@ -136,7 +136,7 @@ hr {
   border: none;
   border-radius: 10px;
   display: inline-block;
-  font-family: Futura, Arial, sans-serif;
+  font-family: futura-pt, sans-serif;
   font-size: 1.6rem;
   font-weight: normal;
   margin: 0 auto;
@@ -152,13 +152,14 @@ hr {
 .grey-caps {
   color: #777777;
   font-size: 1.4rem;
-  font-family: Futura, Arial, sans-serif;
+  font-family: futura-pt, sans-serif;
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
 }
 
 .hero {
+  background-image: url("/images/homepage-header.jpg");
   width: 100%;
 }
 
@@ -210,7 +211,7 @@ hr {
 
 .menu {
   color: black;
-  font-family: Futura, Arial, sans-serif;
+  font-family: futura-pt, sans-serif;
   font-weight: bold;
   font-size: 1.4rem;
   float: right;
@@ -562,9 +563,9 @@ hr {
 }
 
 div.circle {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%
 }
 
 #blue {
@@ -620,10 +621,18 @@ div.circle {
   padding: 5rem 0 5rem 0;
 }
 
+.style-guide-2 img {
+  width: 80%;
+}
+
 .hifi-prototype {
   background-color: #F7F6F6;
   padding: 5rem;
   text-align: center;
+}
+
+.hifi-prototype img {
+  width: 45%;
 }
 
 .pref-test {
@@ -638,6 +647,10 @@ div.circle {
   background-color: #F7F6F6;
   text-align: center;
   padding-bottom: 5rem;
+}
+
+.usability-testing-4 img {
+  width: 80%;
 }
 
 
@@ -660,7 +673,7 @@ div.circle {
 
   .menu {
     color: black;
-    font-family: Futura, Arial, sans-serif;
+    font-family: futura-pt, sans-serif;
     font-weight: bold;
     font-size: 2rem;
     float: right;
