@@ -14,9 +14,9 @@ body {
 }
 
 h1 {
-  font-family: Gudea, Monserrat, Georgia, sans-serif;
+  font-family: 'Gudea', sans-serif;
   font-size: 3.6rem;
-  font-weight: bold;
+  font-weight: bold 700;
   line-height: 5rem;
 }
 
@@ -27,7 +27,7 @@ h2 {
 }
 
 h3 {
-  font-family: Gudea, Monserrat, Georgia, sans-serif;
+  font-family: 'Gudea', sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -64,6 +64,10 @@ h6 {
   color: #FFFFFF;
   font-weight:normal;
   text-align: center;
+}
+
+.black-text {
+  color: #000000;
 }
 
 .indent {
@@ -115,7 +119,7 @@ hr {
   border-radius: 10px;
   display: inline-block;
   font-family: futura-pt, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: normal;
   margin: 3rem;
   padding: 1.5rem;
@@ -137,7 +141,7 @@ hr {
   border-radius: 10px;
   display: inline-block;
   font-family: futura-pt, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: normal;
   margin: 0 auto;
   padding: 1.5rem;
@@ -160,6 +164,17 @@ hr {
 
 .hero {
   background-image: url("/images/homepage-header.jpg");
+  width: 100%;
+}
+
+.about {
+  background-image: url("/images/about-header.jpg");
+  background-position: bottom left;
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:block;
+  height: 60vh;
   width: 100%;
 }
 
@@ -263,6 +278,54 @@ hr {
 .footer-icon {
   fill: white;
   margin: 2rem;
+}
+
+/* About Page */
+
+.about-1 {
+  background-image: url("/images/about-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.about-2 {
+  background-image: url("/images/about-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.about-3 {
+  background-image: url("/images/about-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.about-text {
+  padding: 5rem;
+  width: 100%;
+}
+
+.pink {
+  background-color:#FF05AA;
+  color: #FFFFFF;
+  padding: 5rem;
+  width: 100%;
+}
+
+.flex-about {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 /* Project Page */
@@ -374,7 +437,7 @@ hr {
 }
 
 .research-1 {
-  font-family: Gudea, Georgia, sans-serif;
+  font-family: 'Gudea', sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
   padding-top: 3rem;
@@ -435,15 +498,16 @@ hr {
 .user-stories-1 {
   background-color: #408281;
   color: #FFFFFF;
-  margin: 0;
   padding: 5rem;
   text-align: center;
+  width: 100%;
 }
 
 .user-stories-2 {
   background-color: #ACD7D6;
   margin: 0;
   padding: 5rem 5rem 2.5rem 5rem;
+  width: 100%;
 }
 
 .user-stories-3 {
@@ -452,6 +516,7 @@ hr {
   margin: 0;
   padding: 2.5rem 5rem 5rem 5rem;
   text-align: center;
+  width: 100%;
 }
 
 .user-stories-3 table {
@@ -508,6 +573,19 @@ hr {
   margin: 0;
   padding: 2.5rem 5rem 5rem 5rem;
   width: 100%;
+}
+
+.usability-testing {
+  padding: 0 5rem 5rem 5rem;
+}
+
+.usability-testing img {
+  width: 100%;
+}
+
+.usability-testing ol {
+  font-size: 1.6rem;
+  text-align: left;
 }
 
 .usability-testing ol {
@@ -616,6 +694,10 @@ div.circle {
   width: 100%;
 }
 
+.padding-fix {
+  padding-top: 1rem;
+}
+
 .style-guide-2 {
   text-align: center;
   padding: 5rem 0 5rem 0;
@@ -643,23 +725,21 @@ div.circle {
   width: 80%;
 }
 
-.usability-testing-4 {
+.usability-testing-2 {
   background-color: #F7F6F6;
   text-align: center;
   padding-bottom: 5rem;
 }
 
-.usability-testing-4 img {
+.usability-testing-2 img {
   width: 80%;
 }
-
-
 
 /* Tablets: */
 @media screen and (min-width: 768px) {
 
   h1 {
-    font-family: Gudea, Monserrat, Georgia, sans-serif;
+    font-family: 'Gudea', sans-serif;
     font-size: 4rem;
     font-weight: bold;
     line-height: 5rem;
@@ -715,6 +795,10 @@ div.circle {
 
   .hero-text {
     width: 40%;
+  }
+
+  .hero {
+    height: 40vh;
   }
 
   .featured-content img {
@@ -788,7 +872,6 @@ div.circle {
     background-image: url("/images/keep-logo-background.png");
     background-position: center;
     background-size: cover;
-    max-height: 20vh;
     width: 40%;
   }
 
@@ -873,6 +956,15 @@ div.circle {
    text-align: center;
  }
 
+.style-guide-2 {
+  display: inline-block;
+  text-align: center;
+}
+
+ .usability-testing li {
+   text-align: center;
+ }
+
  .persona-1 img, .persona-2 img, .persona-3 img {
    margin-right: 3rem;
    width: 50%;
@@ -906,6 +998,52 @@ div.circle {
     margin: 3rem 2rem 2rem 5rem;
     max-width: 10rem;
     text-align: left;
+  }
+
+  .hero  {
+    height: 50vh;
+  }
+
+  .about {
+    height: 60vh;
+  }
+
+  .about-text {
+    width: 67%
+  }
+
+  .about-text h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-1 {
+    height: 70vh;
+    width: 33%;
+  }
+
+  .about-2 {
+    width: 33%;
+    order: 1;
+  }
+
+  .about-3 {
+
+    width: 33%;
+    order: 1;
+  }
+
+  .pink {
+    width: 67%;
+    order: 2;
+  }
+
+  .about-flex {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
   }
 
   .keep-hero {
@@ -970,7 +1108,6 @@ div.circle {
 
   .flex-container {
     align-content: stretch;
-    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -980,13 +1117,9 @@ div.circle {
 
   .flex-box {
     flex-grow: 1;
-    padding: 0 2.5rem 2.5rem 2.5rem;
+    /* padding: 0 2.5rem 2.5rem 2.5rem; */
     margin: auto;
     width: 30%;
-  }
-
-  .bottom-space {
-
   }
 
   .features {
@@ -1012,14 +1145,17 @@ div.circle {
     background-image: url("/images/keep-logo-background.png");
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    max-height: 60vh;
+    height: 50vh;
     width: 40%;
+  }
+
+  .solution {
+    padding: 5rem;
   }
 
   .section-title {
     padding: 5rem;
-    margin: 0 10rem 0 10rem;
+    /* margin: 0 10rem 0 10rem; */
     text-align: center;
   }
 
@@ -1077,31 +1213,36 @@ div.circle {
     margin-left: 1rem;
   }
 
+  .user-stories {
+    align-content: stretch;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5rem;
+  }
+
   .user-stories-1 {
     background-color: #408281;
     color: #FFFFFF;
-    flex-grow: 1;
     margin: 0;
-    padding: 5rem;
+    padding-top: 13rem;
     text-align: center;
-    width: 20%;
+    width: 30%;
   }
 
   .user-stories-2 {
     background-color: #ACD7D6;
-    flex-grow: 1;
     margin: 0;
+    padding: 5rem;
     width: 30%;
   }
 
   .user-stories-3 {
     background-color: #ACD7D6;
-    flex-grow: 1;
     font-size: 1.6rem;
     margin: 0;
-    padding: 2rem;
+    padding: 5rem;
     text-align: center;
-    width: 50%;
+    width: 40%;
   }
 
   .user-stories-3 table {
@@ -1117,18 +1258,18 @@ div.circle {
     text-align: center;
   }
 
-  .user-flow-flex {
+  .flex-row {
     align-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
     padding: 0;
   }
 
   .user-flows img {
     margin: 2rem;
-    max-height: 60vh;
-    width: 100%
+    width: 30%;
   }
 
   .wireframes {
@@ -1139,12 +1280,105 @@ div.circle {
     padding: 0;
   }
 
+  .branding {
+    background-color: #F7F6F6;
+    padding: 0 5rem 5rem 5rem;
+    text-align: center;
+  }
+
+  .branding img {
+    width: 100%;
+  }
+
   .user-testing {
     align-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 0;
+  }
+
+  .typography-1 {
+    align-items: stretch;
+    padding-top: 11rem;
+    width: 34%;
+  }
+
+  .typography-2 {
+    align-items: stretch;
+    width: 33%;
+  }
+
+  .style-guide {
+    width: 34%;
+  }
+
+  .style-guide h3 {
+    padding-top: 5vh;
+  }
+
+  .style-guide-2 img {
+    width: 50%;
+  }
+
+  .style-guide-2 {
+    display: flex;
+    width: 33%;
+  }
+
+  .white {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  .hifi-prototype p {
+    text-align: center;
+  }
+
+  .hifi-prototype img {
+    width: 20%;
+  }
+
+  .pref-test {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .pref {
+    width: 34%;
+  }
+
+  .pref-test img {
+    padding: 5rem;
+    width: 30%;
+  }
+
+  .usability-testing-2 {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .usability-title {
+    order: 2;
+  }
+
+  .usability-img {
+    order: 1;
+    padding: 5rem;
+  }
+
+  .roboto {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight:bold;
+    padding-top: 0;
   }
 
 }
