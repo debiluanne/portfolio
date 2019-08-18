@@ -291,16 +291,7 @@ hr {
   width: 100%;
 }
 
-.about-2 {
-  figure {
-    margin: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/images/about-2.jpg");
-    width: 100%;
-    height: 450px;
-  }
+.about-2 { figure { margin: 0; background-position: center; background-repeat: no-repeat; background-size: cover; background-image: url(/images/about-2.jpg); width: 100%; height: 450px;}
 }
 
 .about-3 {
