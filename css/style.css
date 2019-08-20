@@ -163,12 +163,12 @@ hr {
 }
 
 .hero {
-  background-image: url("/images/homepage-header.jpg");
+  background-image: url("../images/homepage-header.jpg");
   width: 100%;
 }
 
 .about {
-  background-image: url("/images/about-header.jpg");
+  background-image: url("../images/about-header.jpg");
   background-position: bottom left;
   background-color: #cccccc;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ hr {
 }
 
 .featured-content {
-  background-image: url("/images/keep-header.jpg");
+  background-image: url("../images/keep-header.jpg");
   background-size: cover;
   height: 60rem;
   text-align: center;
@@ -283,7 +283,7 @@ hr {
 /* About Page */
 
 .about-1 {
-  background-image: url("/images/about-1.jpg");
+  background-image: url("../images/about-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -296,14 +296,14 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/images/about-2.jpg);
+  background-image: url("../images/about-2.jpg");
   width: 100%;
-  height: 300px;
+  height: 294px;
 }
 
 
 .about-3 {
-  background-image: url("/images/about-3.jpg");
+  background-image: url("../images/about-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -334,7 +334,7 @@ hr {
 /* Project Page */
 
 .keep-hero {
-  background-image: url("/images/keep-header.jpg");
+  background-image: url("../images/keep-header.jpg");
   background-size: cover;
   padding-bottom: 2rem;
   position: relative;
@@ -393,7 +393,7 @@ hr {
 }
 
 .project-parallax {
-  background-image: url("/images/case-study-parallax.jpg");
+  background-image: url("../images/case-study-parallax.jpg");
   height: 35rem;
 }
 
@@ -409,7 +409,7 @@ hr {
 }
 
 .solution-img {
-  background-image: url("/images/keep-logo-background.png");
+  background-image: url("../images/keep-logo-background.png");
   background-position: center;
   background-size: cover;
   height: 40vh;
@@ -476,19 +476,19 @@ hr {
 }
 
 .persona-1 {
-  background-image: url("/images/persona-1-bg.png");
+  background-image: url("../images/persona-1-bg.png");
   background-size: cover;
   padding: 5rem;
 }
 
 .persona-2 {
-  background-image: url("/images/persona-2-bg.png");
+  background-image: url("../images/persona-2-bg.png");
   background-size: cover;
   padding: 5rem;
 }
 
 .persona-3 {
-  background-image: url("/images/persona-3-bg.png");
+  background-image: url("../images/persona-3-bg.png");
   background-size: cover;
   padding: 5rem;
 }
@@ -790,7 +790,7 @@ div.circle {
   }
 
   .keep-hero {
-    background-image: url("/images/keep-header.jpg");
+    background-image: url("../images/keep-header.jpg");
     background-size: cover;
     position: relative;
     width: 100%;
@@ -813,7 +813,7 @@ div.circle {
   .featured-content {
     align-content: center;
     align-items: center;
-    background-image: url("/images/keep-header.jpg");
+    background-image: url("../images/keep-header.jpg");
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -872,7 +872,7 @@ div.circle {
   }
 
   .solution-img {
-    background-image: url("/images/keep-logo-background.png");
+    background-image: url("../images/keep-logo-background.png");
     background-position: center;
     background-size: cover;
     width: 40%;
@@ -1049,7 +1049,7 @@ div.circle {
   }
 
   .keep-hero {
-    background-image: url("/images/keep-header.jpg");
+    background-image: url("../images/keep-header.jpg");
     background-size: cover;
     position: relative;
     width: 100%;
@@ -1144,7 +1144,7 @@ div.circle {
   }
 
   .solution-img {
-    background-image: url("/images/keep-logo-background.png");
+    background-image: url("../images/keep-logo-background.png");
     background-position: center;
     background-size: cover;
     height: 50vh;
@@ -1170,7 +1170,7 @@ div.circle {
   }
 
   .persona-1 {
-    background-image: url("/images/persona-1-bg.png");
+    background-image: url("../images/persona-1-bg.png");
     background-size: cover;
     padding: 5rem;
     flex-grow: 1;
@@ -1179,7 +1179,7 @@ div.circle {
   }
 
   .persona-2 {
-    background-image: url("/images/persona-2-bg.png");
+    background-image: url("../images/persona-2-bg.png");
     background-size: cover;
     flex-grow: 1;
     padding: 5rem;
@@ -1187,7 +1187,7 @@ div.circle {
   }
 
   .persona-3 {
-    background-image: url("/images/persona-3-bg.png");
+    background-image: url("../images/persona-3-bg.png");
     background-size: cover;
     flex-grow: 1;
     padding: 5rem;
