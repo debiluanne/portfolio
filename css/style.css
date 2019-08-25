@@ -59,7 +59,6 @@ h6 {
   text-align: center;
 }
 
-
 .white-text {
   color: #FFFFFF;
   font-weight:normal;
@@ -110,6 +109,7 @@ hr {
 
 .container {
   margin: 0 auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -164,17 +164,6 @@ hr {
 
 .hero {
   background-image: url("../images/homepage-header.jpg");
-  width: 100%;
-}
-
-.about {
-  background-image: url("../images/about-header.jpg");
-  background-position: bottom left;
-  background-color: #cccccc;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display:block;
-  height: 60vh;
   width: 100%;
 }
 
@@ -258,6 +247,7 @@ hr {
 .footer {
   background-color: #408281;
   color: #FFFFFF;
+  grid-area: footer;
   padding: 5rem;
   text-align: center;
 }
@@ -282,53 +272,59 @@ hr {
 
 /* About Page */
 
-.about-1 {
-  background-image: url("../images/about-1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
+.about-container {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
   width: 100%;
 }
 
-.about-2 figure {
-  margin: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../images/about-2.jpg");
-  width: 100%;
-  height: 294px;
-}
-
-
-.about-3 {
-  background-image: url("../images/about-3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
+.about-container img {
   width: 100%;
 }
 
-.about-text {
+.about-text-1, .about-text-2, .about-text-3 {
   padding: 5rem;
+}
+
+.about-header {
+  background-image: url("../images/about-header.jpg");
+  background-position: bottom left;
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: about-header;
+  height: 60vh;
   width: 100%;
 }
 
 .pink {
   background-color:#FF05AA;
+  background-size:100% 100%;
   color: #FFFFFF;
   padding: 5rem;
   width: 100%;
 }
 
-.flex-about {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0;
+.about-img-1 {
+  background-image: url("../images/about-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+.about-img-2 {
+  background-image: url("../images/about-2.jpg");
+  background-size: cover;
+  height: 40vh;
+}
+
+.about-img-3 {
+  background-image: url("../images/about-3.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
 }
 
 /* Project Page */
@@ -1007,45 +1003,63 @@ div.circle {
     height: 50vh;
   }
 
-  .about {
-    height: 60vh;
-  }
-
-  .about-text {
-    width: 67%
-  }
-
-  .about-text h1 {
-    margin: 0;
-    padding: 0;
-  }
-
-  .about-1 {
-    height: 70vh;
-    width: 33%;
-  }
-
-  .about-2 {
-    width: 33%;
-    order: 1;
-  }
-
-  .about-3 {
-    width: 33%;
-    order: 1;
-  }
-
   .pink {
-    width: 67%;
-    order: 2;
+    background-size: cover;
+    height: 100%;
   }
 
-  .about-flex {
-    align-items: stretch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 0;
+  .about-header {
+    background-image: url("../images/about-header.jpg");
+    background-position: bottom left;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: about-header;
+    height: 60vh;
+    width: 100%;
+  }
+
+  .about-container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "about-text-1 about-text-1 about-text-1 about-img-1"
+      "about-img-2 about-text-2 about-text-2 about-text-2"
+      "about-text-3 about-text-3 about-text-3 about-img-3";
+    justify-items: stretch;
+  }
+
+  .about-img-1 {
+    grid-area: about-img-1;
+    height: 100%;
+  }
+
+  .about-img-2 {
+    grid-area: about-img-2;
+    height: 100%;
+  }
+
+  .about-img-3 {
+    grid-area: about-img-3;
+    height: 100%;
+  }
+
+  .about-text-1 {
+    grid-area: about-text-1;
+    padding: 5rem;
+  }
+
+  .about-text-2 {
+    align-self: center;
+    grid-area: about-text-2;
+    padding: 5rem;
+  }
+
+  .about-text-3 {
+    grid-area: about-text-3;
+    padding: 5rem;
   }
 
   .keep-hero {
@@ -1157,7 +1171,6 @@ div.circle {
 
   .section-title {
     padding: 5rem;
-    /* margin: 0 10rem 0 10rem; */
     text-align: center;
   }
 
