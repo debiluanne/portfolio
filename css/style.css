@@ -270,6 +270,11 @@ hr {
   margin: 2rem;
 }
 
+.footer-text {
+  font-size: 1.4rem;
+  text-align: left;
+}
+
 /* About Page */
 
 .about-container {
@@ -321,6 +326,46 @@ hr {
 }
 
 .about-img-3 {
+  background-image: url("../images/about-3.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+/* Contact Page */
+
+.contact-container {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact-container img {
+  width: 100%;
+}
+
+.text-box {
+  padding: 5rem;
+  text-align: center;
+}
+
+.text-box p {
+  text-align: center;
+}
+
+.contact-header {
+  background-image: url("../images/contact-header.jpg");
+  background-position: bottom center;
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 28vh;
+  width: 100%;
+}
+
+.contact-img {
   background-image: url("../images/about-3.jpg");
   background-position: center;
   background-size: cover;
@@ -1061,6 +1106,20 @@ div.circle {
   .about-text-3 {
     grid-area: about-text-3;
     padding: 5rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .contact-header {
+    background-position: bottom center;
+    height: 40vh;
+    width: 100%;
+  }
+
+  .contact-img {
+    height: 100%;
   }
 
   .keep-hero {
