@@ -163,7 +163,7 @@ hr {
 }
 
 .hero {
-  background-image: url("../images/homepage-header.jpg");
+  background-image: url("../images/home-header.jpg");
   width: 100%;
 }
 
@@ -390,6 +390,7 @@ hr {
 
 .project-parallax {
   background-image: url("../images/case-study-parallax.jpg");
+  background-position: -50px;
   height: 35rem;
 }
 
@@ -472,19 +473,19 @@ hr {
 }
 
 .persona-1 {
-  background-image: url("../images/persona-1-bg.png");
+  background-image: url("../images/persona-1-bg.jpg");
   background-size: cover;
   padding: 5rem;
 }
 
 .persona-2 {
-  background-image: url("../images/persona-2-bg.png");
+  background-image: url("../images/persona-2-bg.jpg");
   background-size: cover;
   padding: 5rem;
 }
 
 .persona-3 {
-  background-image: url("../images/persona-3-bg.png");
+  background-image: url("../images/persona-3-bg.jpg");
   background-size: cover;
   padding: 5rem;
 }
