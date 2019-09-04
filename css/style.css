@@ -162,8 +162,11 @@ hr {
   text-transform: uppercase;
 }
 
-.hero {
+.home-header {
   background-image: url("../images/home-header.jpg");
+}
+
+.hero {
   width: 100%;
 }
 
@@ -275,6 +278,69 @@ hr {
   text-align: left;
 }
 
+.projects {
+  margin: auto;
+}
+
+.busybus-project, .sonyhall-project, .keep-project {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.sonyhall-project img, .busybus-project img, .keep-project img {
+  width: 100%;
+}
+
+.sonyhall-project:hover img {
+  opacity: 0.4;
+}
+
+.busybus-project:hover img {
+  opacity: 0.4;
+}
+
+.keep-project:hover img {
+  opacity: 0.2;
+}
+
+.bb-overlay, .sh-overlay, .keep-overlay {
+  font-size: 3rem;
+  letter-spacing: .7rem;
+  line-height: 3rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.busybus-project:hover .bb-overlay {
+  opacity: 1;
+}
+
+.sonyhall-project:hover .sh-overlay {
+  opacity: 1;
+}
+
+.keep-project:hover .keep-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /* About Page */
 
 .about-container {
@@ -372,13 +438,60 @@ hr {
   height: 40vh;
 }
 
-/* Project Page */
+/* Project Pages */
 
 .keep-hero {
   background-image: url("../images/keep-header.jpg");
   background-size: cover;
   padding-bottom: 2rem;
   position: relative;
+  width: 100%;
+}
+
+.sony-header {
+  background-image: url("../images/sony-hall/sony-hall-venue.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.busybus-header {
+  background-image: url("../images/busybus/map-blur.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  padding-bottom: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.white-link a {
+  color: #FFFFFF;
+}
+
+.project.container {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.project-container img {
+  width: 100%;
+}
+
+.grey {
+  background-color:#BBBBBB;
+  background-size:100% 100%;
+  color: #FFFFFF;
+  padding: 5rem;
+  width: 100%;
+}
+
+.teal {
+  background-color: #408281;
+  background-size:100% 100%;
+  padding: 5rem;
   width: 100%;
 }
 
@@ -400,7 +513,7 @@ hr {
 }
 
 .project-header p {
-  padding: 0 5rem 0 5rem;
+  padding: 0 0 0 5rem;
   text-align: center;
 }
 
@@ -410,6 +523,119 @@ hr {
 
 .project-text h1 {
   margin-top: 0;
+}
+
+.sh-solution {
+  background-color: #F7F6F6;
+  background-size: 100% 100%;
+  padding: 2rem;
+}
+
+.strat-img-1, .strat-img-2, .strat-img-3 {
+  background-color: #F7F6F6;
+  background-size: 100% 100%;
+}
+
+.strat-button {
+  background-color: #F7F6F6;
+  background-size: 100% 100%;
+  padding: 2rem;
+  width: 100%;
+}
+
+.bb-img-1, .bb-comp-analysis {
+  background-color: #F7F6F6;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.bb-img-1 img {
+  width: 80%;
+}
+
+.bb-solution {
+  background-color: #F7F6F6;
+}
+
+.bb-user-stories, .bb-stories-btn {
+  background-color: #ACD7D6;
+}
+
+.bg-test {
+  background-color: #ACD7D6;
+  padding-bottom: 5rem;
+}
+
+.bb-survey-1, .bb-survey-2, .bb-survey-3 {
+  padding: 2.5rem 5rem 2.5rem 5rem;
+  text-align: center;
+}
+
+.bb-survey-btn {
+  padding: 2.5rem 5rem 5rem 5rem;
+}
+
+.button-spacing {
+  margin-top: 5rem;
+}
+
+.g-maps, .citymapper, .bb-comp-img, .bb-comp-btn {
+  background-color: #F7F6F6;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.g-maps p, .citymapper p, .bb-comp-analysis p {
+  text-align: left;
+}
+
+.bb-comp-img img {
+  width: 100%;
+}
+
+.bb-sketches ul, .bb-visual ul {
+  font-size: 1.6rem;
+  list-style-type: disc;
+  text-align: left;
+}
+
+.bb-visual-img {
+  padding-bottom: 5rem;
+}
+
+.bb-sketch-img img, .bb-visual-img img, .bb-ia-img-1 img, .bb-process-img img{
+  width: 100%;
+}
+
+.bb-prototype-img img {
+  width: 60%;
+}
+
+.bb-prototype-img {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.grey-bg {
+  background-color: #F7F6F6;
+}
+
+.bb-user-testing p, .bb-visual p, .bb-ia p, .bb-design-process p, .bb-prototype p {
+  text-align: left;
+}
+
+.bb-table {
+  background-color: #ACD7D6;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.secondary li {
+  font-size: 1.6rem;
+  list-style-type: circle;
 }
 
 .summary {
@@ -633,11 +859,6 @@ hr {
   text-align: left;
 }
 
-.usability-testing ol {
-  font-size: 1.6rem;
-  text-align: left;
-}
-
 .usability-testing p {
   font-weight: bold;
 }
@@ -780,6 +1001,19 @@ div.circle {
   width: 80%;
 }
 
+/* Sony Hall project */
+
+.sh-solution ul {
+    font-size: 1.6rem;
+    text-align: left;
+    list-style-type: circle;
+}
+
+.img-spacing {
+  padding: 2.5rem 5rem 2.5rem 5rem;
+}
+
+
 /* Tablets: */
 @media screen and (min-width: 768px) {
 
@@ -838,12 +1072,31 @@ div.circle {
     width: 100%;
   }
 
+  .busybus-header {
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    width: 100%;
+  }
+
+  .project-img {
+    height: 30%;
+  }
+
   .hero-text {
     width: 40%;
   }
 
   .hero {
     height: 40vh;
+  }
+
+  .work-grid {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
   }
 
   .featured-content img {
@@ -877,6 +1130,37 @@ div.circle {
     flex-direction: row;
     justify-content: center;
     padding: 5rem;
+  }
+
+  .projects {
+    align-items: stretch;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .busybus-project {
+    flex: 1;
+    margin: auto;
+  }
+
+  .sonyhall-project {
+    flex: 1;
+    margin: auto;
+  }
+
+  .keep-project {
+    flex: 1;
+    margin: auto;
+  }
+
+  .busybus-project img, .sonyhall-project img {
+    height: 100%:
+  }
+
+  .bb-overlay, .sh-overlay {
+    font-size: 4rem;
   }
 
   .project-header {
@@ -1054,6 +1338,16 @@ div.circle {
     height: 100%;
   }
 
+  .teal {
+    background-size: cover;
+    height: 100%;
+  }
+
+  .grey {
+    background-size: cover;
+    height: 100%;
+  }
+
   .about-header {
     background-image: url("../images/about-header.jpg");
     background-position: bottom left;
@@ -1120,6 +1414,271 @@ div.circle {
 
   .contact-img {
     height: 100%;
+  }
+
+  .work-grid {
+    align-content: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "pink teal grey"
+      "sh-problem sh-problem sh-img-1"
+      "sh-solution sh-solution sh-solution"
+      "strat-img-1 strat-img-2 strat-img-3"
+      "strat-button strat-button strat-button"
+      "implement implement implement"
+      "sh-giveaway-1 sh-giveaway-2 sh-giveaway-3"
+      "conclusion-text conclusion-text conclusion-img"
+      ;
+    justify-items: stretch;
+  }
+
+  .sh-problem {
+    grid-area: sh-problem;
+  }
+
+  .sh-solution {
+    grid-area: sh-solution;
+    padding: 5rem;
+    text-align: center;
+  }
+
+  .stra-img-1 {
+    grid-area: stra-img-1;
+  }
+
+  .stra-img-2 {
+    grid-area: stra-img-2;
+  }
+
+  .stra-img-3 {
+    grid-area: stra-img-3;
+  }
+
+  .sh-img-1 {
+    grid-area: sh-img-1;
+    justify-self: center;
+    padding: 2rem;
+    text-align: center;
+    width: 70%;
+  }
+
+  .strat-button {
+    grid-area: strat-button;
+  }
+
+  .implement {
+    grid-area: implement;
+  }
+
+  .conclusion-text {
+    grid-area: conclusion-text;
+  }
+
+  .conclusion-img {
+    grid-area: conclusion-img;
+    justify-self: center;
+    padding: 2rem;
+    text-align: center;
+    width: 70%;
+  }
+
+  .sh-giveaway-1 {
+    grid-area: sh-giveaway-1;
+  }
+
+  .sh-giveaway-2 {
+    grid-area: sh-giveaway-2;
+  }
+
+  .sh-giveaway-3 {
+    grid-area: sh-giveaway-3;
+  }
+
+  .project-img {
+    padding: 1rem;
+  }
+
+  .bb-container {
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "pink grey teal"
+      "bb-problem bb-problem bb-problem"
+      "bb-img-1 bb-solution bb-solution"
+      "bb-user-research bb-user-research bb-user-research"
+      "bb-survey-1 bb-survey-2 bb-survey-3"
+      "bb-survey-btn bb-survey-btn bb-survey-btn"
+      "bb-comp-analysis bb-comp-analysis bb-comp-analysis"
+      "g-maps citymapper bb-comp-img"
+      "bb-comp-btn bb-comp-btn bb-comp-btn"
+      "bb-user-stories bb-table bg-test"
+      "bb-sketches bb-sketches bb-sketch-img"
+      "bb-test-img bb-user-testing bb-user-testing"
+      "bb-visual bb-visual bb-visual-img"
+      "bb-ia-img bb-ia bb-ia"
+      "bb-design-process bb-design-process bb-process-img"
+      "bb-prototype bb-prototype bb-prototype-img"
+      ;
+    justify-items: stretch;
+  }
+
+  .bb-stories-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .bg-test {
+    display: flex;
+    grid-area: bg-test;
+  }
+
+  .bb-user-stories {
+    grid-area: bb-user-stories;
+  }
+
+  .bb-table {
+    grid-area: bb-table;
+  }
+
+  .bb-process-img {
+    grid-area: bb-process-img;
+    margin: auto;
+  }
+
+  .bb-design-process {
+    grid-area: bb-design-process;
+  }
+
+  .bb-comp-img {
+    grid-area: bb-comp-img;
+  }
+
+  .bb-comp-btn {
+    grid-area: bb-comp-btn;
+  }
+
+  .g-maps {
+    grid-area: g-maps;
+  }
+
+  .citymapper {
+    grid-area: citymapper;
+  }
+
+  .bb-problem {
+    grid-area: bb-problem;
+  }
+
+  .bb-img-1 {
+    grid-area: bb-img-1;
+  }
+
+  .bb-img-1 img, .bb-test-img img {
+    width: 100%;
+  }
+
+  .bb-ia-img img {
+    width: 100%;
+  }
+
+  .bb-ia-img {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .bb-solution {
+    grid-area: bb-solution;
+  }
+
+  .bb-user-research {
+    grid-area: bb-user-research;
+  }
+
+  .bb-survey-1 {
+    grid-area: bb-survey-1;
+  }
+
+  .bb-survey-2 {
+    grid-area: bb-survey-2;
+  }
+
+  .bb-survey-3 {
+    grid-area: bb-survey-3;
+  }
+
+  .bb-survey-btn {
+    grid-area: bb-survey-btn;
+  }
+
+  .bb-comp-analysis {
+    grid-area: bb-comp-analysis;
+  }
+
+  .bb-conclusion {
+    grid-area: bb-conclusion;
+  }
+
+  .bb-conclusion-img {
+    grid-area: bb-conclusion-img;
+  }
+
+  .bb-sketches {
+    grid-area: bb-sketches;
+  }
+
+  .bb-sketch-img {
+    grid-area: bb-sketch-img;
+    margin: auto;
+  }
+
+  .bb-user-testing {
+    grid-area: bb-user-testing;
+  }
+
+  .bb-test-img {
+    grid-area: bb-test-img;
+    padding-top: 6rem;
+  }
+
+  .bb-visual {
+    grid-area: bb-visual;
+  }
+
+  .bb-visual-img {
+    grid-area: bb-visual-img;
+    margin: auto;
+  }
+
+  .bb-ia {
+    grid-area: bb-ia;
+  }
+
+  .bb-ia-img {
+    grid-area: bb-ia-img;
+  }
+
+  .bb-prototype {
+    grid-area: bb-prototype;
+  }
+
+  .bb-prototype-img {
+    grid-area: bb-prototype-img;
+    padding-top: 5rem;
+  }
+
+  .bb-prototype-img img {
+    width: 50%;
   }
 
   .keep-hero {
@@ -1193,7 +1752,6 @@ div.circle {
 
   .flex-box {
     flex-grow: 1;
-    /* padding: 0 2.5rem 2.5rem 2.5rem; */
     margin: auto;
     width: 30%;
   }
@@ -1243,7 +1801,7 @@ div.circle {
   }
 
   .persona-1 {
-    background-image: url("../images/persona-1-bg.png");
+    background-image: url("../images/persona-1-bg.jpg");
     background-size: cover;
     padding: 5rem;
     flex-grow: 1;
@@ -1252,7 +1810,7 @@ div.circle {
   }
 
   .persona-2 {
-    background-image: url("../images/persona-2-bg.png");
+    background-image: url("../images/persona-2-bg.jpg");
     background-size: cover;
     flex-grow: 1;
     padding: 5rem;
@@ -1260,7 +1818,7 @@ div.circle {
   }
 
   .persona-3 {
-    background-image: url("../images/persona-3-bg.png");
+    background-image: url("../images/persona-3-bg.jpg");
     background-size: cover;
     flex-grow: 1;
     padding: 5rem;
