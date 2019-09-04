@@ -1147,13 +1147,12 @@ div.circle {
 
   .sonyhall-project {
     flex: 1;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .keep-project {
     flex: 1;
     margin: 0 auto;
-    max-height: 20rem;
   }
 
   .busybus-project img, .sonyhall-project img, .keep-project img {
