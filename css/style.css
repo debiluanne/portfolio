@@ -1136,7 +1136,7 @@ div.circle {
     align-items: stretch;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+
     margin: 0;
   }
 
@@ -1417,10 +1417,9 @@ div.circle {
   }
 
   .work-grid {
-    align-content: stretch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .project-container {
