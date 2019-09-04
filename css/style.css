@@ -1142,7 +1142,7 @@ div.circle {
 
   .busybus-project {
     flex: 1;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .sonyhall-project {
@@ -1152,14 +1152,15 @@ div.circle {
 
   .keep-project {
     flex: 1;
-    margin: auto;
+    margin: 0 auto;
+    max-height: 20rem;
   }
 
-  .busybus-project img, .sonyhall-project img {
+  .busybus-project img, .sonyhall-project img, .keep-project img {
     height: 100%:
   }
 
-  .bb-overlay, .sh-overlay {
+  .bb-overlay, .sh-overlay, .keep-overlay {
     font-size: 4rem;
   }
 
