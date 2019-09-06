@@ -34,9 +34,11 @@
             <p>
               Send me an email and we'll get the conversation started!
             </p>
-            <div class="teal-button">
-              <a href="mailto:deborahgustafson@gmail.com" target="_blank">Email me</a>
-            </div>
+            <form method="POST" action="https://formspree.io/deborahgustafson@gmail.com">
+              <input type="email" name="email" placeholder="Email address" class="form-margin"><br>
+              <textarea name="message" placeholder="Type your message here"></textarea><br>
+              <button type="submit" class="teal-button white-link">Submit</button>
+            </form>
           </div>
         <div class="contact-img">
         </div>

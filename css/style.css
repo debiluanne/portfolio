@@ -43,6 +43,7 @@ h4 {
 h5 {
   color: #FFFFFF;
   font-family: futura-pt, sans-serif;
+  font-size: 2.4rem;
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
@@ -107,6 +108,14 @@ hr {
   color: #000000;
 }
 
+.white-link {
+  color: #FFFFFF;
+}
+
+.teal-link {
+  color: #408281;
+}
+
 .container {
   margin: 0 auto;
   height: 100%;
@@ -129,6 +138,13 @@ hr {
 
 .center-btn {
   text-align: center;
+}
+
+input, textarea {
+  font-family: inherit;
+  margin: 1rem;
+  padding: 1rem;
+  width: 60%;
 }
 
 .teal-button a {
@@ -164,6 +180,7 @@ hr {
 
 .home-header {
   background-image: url("../images/home-header.jpg");
+  background-position: 60% 80%;
 }
 
 .hero {
@@ -172,7 +189,7 @@ hr {
 
 .hero-text {
   margin: 0 auto;
-  padding-top: 10rem;
+  padding: 10rem 0;
   text-align: center;
   width: 60%;
 }
@@ -235,7 +252,6 @@ hr {
 .parallax {
   background-attachment: fixed;
   background-color: #cccccc;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display:block;
@@ -458,10 +474,14 @@ hr {
   background-image: url("../images/busybus/map-blur.jpg");
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 80vh;
   padding-bottom: 2rem;
   position: relative;
   width: 100%;
+}
+
+.project-text h1 {
+  margin: 0;
 }
 
 .white-link a {
@@ -477,6 +497,13 @@ hr {
 }
 
 .project-container img {
+  width: 100%;
+}
+
+.lt-grey {
+  background-color:#F7F6F6;
+  background-size:100% 100%;
+  padding: 5rem;
   width: 100%;
 }
 
@@ -502,8 +529,8 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
-  padding: 2rem;
+  margin: 20px auto;
+  padding: 0;
   text-align: center;
   width: 100%;
 }
@@ -513,7 +540,7 @@ hr {
 }
 
 .project-header p {
-  padding: 0 0 0 5rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -561,6 +588,10 @@ hr {
   background-color: #ACD7D6;
 }
 
+.bb-user-stories p {
+  text-align: left;
+}
+
 .bg-test {
   background-color: #ACD7D6;
   padding-bottom: 5rem;
@@ -581,15 +612,15 @@ hr {
 
 .g-maps, .citymapper, .bb-comp-img, .bb-comp-btn {
   background-color: #F7F6F6;
-  padding: 2.5rem;
+  padding: 2.5rem 5rem;
   text-align: center;
 }
 
-.g-maps p, .citymapper p, .bb-comp-analysis p {
+.g-maps p, .citymapper p, .bb-comp-analysis p, .bb-user-research p, .bb-solution p, .bb-problem p, .bb-summary p, .bb-sketches p {
   text-align: left;
 }
 
-.bb-comp-img img {
+.bb-comp-img img, .bb-sketch-img img, .bb-visual-img img, .bb-process-img img, .bb-test-img img, .bb-ia-img img {
   width: 100%;
 }
 
@@ -601,10 +632,6 @@ hr {
 
 .bb-visual-img {
   padding-bottom: 5rem;
-}
-
-.bb-sketch-img img, .bb-visual-img img, .bb-ia-img-1 img, .bb-process-img img{
-  width: 100%;
 }
 
 .bb-prototype-img img {
@@ -629,8 +656,13 @@ hr {
   font-size: 1.6rem;
   margin: 0;
   padding: 5rem;
-  text-align: center;
+  text-align: left;
   width: 100%;
+}
+
+.bb-table td {
+  padding: .5rem;
+  text-align: left;
 }
 
 .secondary li {
@@ -643,6 +675,10 @@ hr {
   margin: 0;
   padding: 5rem;
   width: 100%;
+}
+
+.summary p, {
+  text-align: left;
 }
 
 .roles {
@@ -711,20 +747,34 @@ hr {
   font-family: 'Gudea', sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
-  padding-top: 3rem;
+  padding: 2.5rem 5rem;
+  text-align: center;
 }
 
 .research-1 img {
-  width: 100%;
+  width: 80%;
 }
 
 .research-2 {
-  padding: 3rem 0 3rem 0;
+  padding: 2.5rem 5rem;
   text-align: center;
+}
+
+.research-2 p {
+  margin-top: 1rem;
+}
+
+#percent {
+  font-family: 'Gudea', sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1;
+  padding:0;
 }
 
 .research-3 {
   font-size: 1.6rem;
+  padding: 2.5rem 5rem;
   text-align: center;
 }
 
@@ -762,8 +812,17 @@ hr {
 }
 
 .persona-1 img, .persona-2 img, .persona-3 img {
-  margin-right: 1rem;
-  width: 35%;
+  width: 100%;
+}
+
+.persona-grid {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.persona-title {
+  padding-left: 3rem;
 }
 
 .user-stories-1 {
@@ -988,7 +1047,8 @@ div.circle {
 }
 
 .pref-test img {
-  width: 80%;
+  padding: 5rem;
+  width: 100%;
 }
 
 .usability-testing-2 {
@@ -998,7 +1058,13 @@ div.circle {
 }
 
 .usability-testing-2 img {
-  width: 80%;
+  padding: 5rem;
+  width: 100%;
+}
+
+.text-padding {
+  padding: 5rem;
+  text-align: center;
 }
 
 /* Sony Hall project */
@@ -1074,7 +1140,7 @@ div.circle {
 
   .busybus-header {
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
     position: relative;
     width: 100%;
   }
@@ -1281,39 +1347,21 @@ div.circle {
    text-align: center;
  }
 
- .usability-testing ol {
-   text-align: center;
- }
-
 .style-guide-2 {
   display: inline-block;
   text-align: center;
 }
 
- .usability-testing li {
-   text-align: center;
- }
-
- .persona-1 img, .persona-2 img, .persona-3 img {
-   margin-right: 3rem;
-   width: 50%;
- }
-
- .personas ul {
-   margin-left: 41rem;
- }
-
- .indent li {
-   font-size: 1.6rem;
-   line-height: 2.4rem;
- }
-
  .pref-test img {
-   width: 70%;
+   width: 60%;
  }
 
  .center-btn {
    text-align: center;
+ }
+
+ .text-padding {
+   padding: 5rem 10rem;
  }
 
 }
@@ -1362,7 +1410,7 @@ div.circle {
   .about-container {
     align-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 30% 1fr 1fr 30%;
     grid-template-rows: auto;
     grid-template-areas:
       "about-text-1 about-text-1 about-text-1 about-img-1"
@@ -1388,18 +1436,18 @@ div.circle {
 
   .about-text-1 {
     grid-area: about-text-1;
-    padding: 5rem;
+    padding: 5rem 20%;
   }
 
   .about-text-2 {
     align-self: center;
     grid-area: about-text-2;
-    padding: 5rem;
+    padding: 5rem 20%;
   }
 
   .about-text-3 {
     grid-area: about-text-3;
-    padding: 5rem;
+    padding: 5rem 20%;
   }
 
   .contact-container {
@@ -1504,6 +1552,7 @@ div.circle {
 
   .project-img {
     padding: 1rem;
+    width: 35%;
   }
 
   .bb-container {
@@ -1698,14 +1747,14 @@ div.circle {
   }
 
   .project-header img {
-    max-height: 50rem;
-    max-width: 50rem;
-    padding: 3rem;
+    max-height: 60rem;
+    max-width: 65rem;
+    padding: 0;
     width: 100%;
   }
 
   .project-text {
-    width: 40%;
+    width: 30%;
     padding-left: 2rem;
     text-align: left;
   }
@@ -1788,7 +1837,10 @@ div.circle {
 
   .section-title {
     padding: 5rem;
-    text-align: center;
+  }
+
+  .text-padding {
+    padding: 5rem 30rem 5rem 30rem;
   }
 
   .persona-flex {
@@ -1824,25 +1876,10 @@ div.circle {
     width: 30%;
   }
 
-  .persona-1 img, .persona-2 img, .persona-3 img {
-    margin-right: 2rem;
-    width: 40%;
-  }
-
   .personas ul {
     font-size: 1.6rem;
     list-style-type: disc;
     margin-left: .5rem;
-  }
-
-  .indent li {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    margin-left: 13rem;
-  }
-
-  .indent {
-    margin-left: 1rem;
   }
 
   .user-stories {
@@ -1891,6 +1928,7 @@ div.circle {
   }
 
   .flex-row {
+    align-items: stretch;
     align-content: center;
     display: flex;
     flex-direction: row;
@@ -1942,11 +1980,7 @@ div.circle {
   }
 
   .style-guide {
-    width: 34%;
-  }
-
-  .style-guide h3 {
-    padding-top: 5vh;
+    width: 50%;
   }
 
   .style-guide-2 img {
@@ -1955,7 +1989,7 @@ div.circle {
 
   .style-guide-2 {
     display: flex;
-    width: 33%;
+    width: 50%;
   }
 
   .white {
@@ -1972,20 +2006,20 @@ div.circle {
   }
 
   .pref-test {
-    align-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 0;
   }
 
   .pref {
-    width: 34%;
+    width: 30%;
   }
 
   .pref-test img {
-    padding: 5rem;
-    width: 30%;
+    width: 100%;
   }
 
   .usability-testing-2 {
@@ -1999,6 +2033,7 @@ div.circle {
 
   .usability-title {
     order: 2;
+    width: 50%;
   }
 
   .usability-img {
