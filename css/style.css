@@ -66,6 +66,10 @@ h6 {
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
 .black-text {
   color: #000000;
 }
