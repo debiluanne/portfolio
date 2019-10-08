@@ -199,7 +199,8 @@ input, textarea {
 
 .home-header {
   background-image: url("../images/home-header.jpg");
-  background-position: 60% 80%;
+  background-position: top right;
+  //*background-position: 60% 80%;*//
 }
 
 .hero {
@@ -217,7 +218,7 @@ input, textarea {
   background-image: url("../images/top-trail/top-trail-header.jpg");
   background-size: cover;
   font-weight: bold;
-  height: 70rem;
+  height: 80rem;
   text-align: center;
   width: 100%;
 }
@@ -229,7 +230,7 @@ input, textarea {
 }
 
 .featured-content img {
-  width: 80%;
+  width: 70%;
   padding: 0 2rem;
 }
 
@@ -276,7 +277,6 @@ input, textarea {
   background-repeat: no-repeat;
   background-size: cover;
   display:block;
-  height: 60vh;
   width: 100%;
 }
 
@@ -495,7 +495,7 @@ input, textarea {
   background-image: url("../images/busybus/map-blur.jpg");
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 100vh;
   padding-bottom: 2rem;
   position: relative;
   width: 100%;
@@ -505,7 +505,7 @@ input, textarea {
   background-image: url("../images/top-trail/top-trail-header.jpg");
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
   padding-bottom: 2rem;
   position: relative;
   width: 100%;
@@ -608,7 +608,7 @@ input, textarea {
 }
 
 .bb-img-1 img {
-  width: 80%;
+  width: 60%;
 }
 
 .tt-img-1 img {
@@ -1358,7 +1358,7 @@ div.circle {
   }
 
   .toptrail-header {
-    height: 60vh;
+    height: 70vh;
   }
 
   .project-text {
@@ -1747,8 +1747,13 @@ div.circle {
     grid-area: bb-img-1;
   }
 
-  .bb-img-1 img, .bb-test-img img {
+.bb-test-img img {
     width: 100%;
+  }
+
+  .bb-img-1 img {
+    width:50%;
+    padding-bottom: 5rem;
   }
 
   .bb-ia-img img {
