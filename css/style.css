@@ -215,10 +215,7 @@ input, textarea {
 }
 
 .featured-content {
-  background-image: url("../images/top-trail/top-trail-header.jpg");
-  background-size: cover;
   font-weight: bold;
-  height: 80rem;
   text-align: center;
   width: 100%;
 }
@@ -478,7 +475,6 @@ input, textarea {
 /* Project Pages */
 
 .keep-hero {
-  background-image: url("../images/keep-header.jpg");
   background-size: cover;
   padding-bottom: 2rem;
   position: relative;
@@ -492,7 +488,7 @@ input, textarea {
 }
 
 .busybus-header {
-  background-image: url("../images/busybus/map-blur.jpg");
+  background-color: #FFFFFF;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -502,7 +498,7 @@ input, textarea {
 }
 
 .toptrail-header {
-  background-image: url("../images/top-trail/top-trail-header.jpg");
+  background-color: #FFFFFF;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -567,7 +563,7 @@ input, textarea {
 }
 
 .project-header img {
-  width: 60%;
+  width: 70%;
 }
 
 .project-header p {
@@ -1234,7 +1230,6 @@ div.circle {
 
   .parallax {
     background-attachment: fixed;
-    background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1244,7 +1239,6 @@ div.circle {
   }
 
   .keep-hero {
-    background-image: url("../images/keep-header.jpg");
     background-size: cover;
     position: relative;
     width: 100%;
@@ -1285,8 +1279,6 @@ div.circle {
   .featured-content {
     align-content: center;
     align-items: center;
-    background-image: url("../images/top-trail/top-trail-header.jpg");
-    background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1354,7 +1346,7 @@ div.circle {
   .project-header img {
     max-height: 40rem;
     padding: 0;
-    width: 90%;
+    width: auto;
   }
 
   .toptrail-header {
@@ -1851,8 +1843,6 @@ div.circle {
   }
 
   .keep-hero {
-    background-image: url("../images/keep-header.jpg");
-    background-size: cover;
     position: relative;
     width: 100%;
   }
@@ -1869,8 +1859,12 @@ div.circle {
 
   .project-header img {
     max-height: 50rem;
-    max-width: 25rem;
-    padding: 0;
+    padding: 0 0 2rem 0;
+    width: auto;
+  }
+
+  #wide-photo {
+    width: 100%;
   }
 
   .project-text {
